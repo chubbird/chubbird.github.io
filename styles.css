@@ -1,0 +1,170 @@
+body {
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpapersafari.com%2F26%2F18%2F50rqVC.png&f=1&nofb=1&ipt=8bf51776608949afa7a628522a3423cfc9c4824a44814df1468f5f6cf08ee38f");
+}
+
+header {
+    display: flex;
+    align-items: center;
+    float: left;
+    box-shadow: 4px 4px 16px;
+    background-image: url("imaages.jpeg");
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 95%;
+    z-index: 2;
+}
+
+header p {
+    cursor: cell;
+    text-shadow: rgba(0, 0, 0) 4px 8px 16px;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%; 
+    margin-left: 0.5%;
+    font-size: 220%;
+    color: antiquewhite;
+    transition: all ease .2s;
+}
+
+header p:hover {
+    color: rgba(230, 200, 150, 1);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20%;
+}
+
+nav ul li {
+    padding-inline: 20%;
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: antiquewhite;
+    text-align: center;
+    text-decoration: none;
+    transition: all ease .2s;
+    text-shadow: rgba(0, 0, 0) 4px 8px 16px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    color: rgba(230, 200, 150, 1);;
+}
+
+.hdiv {
+    cursor: default;
+    box-shadow: 4px 4px 32px rgba(0,0,0);
+    border-radius: 5%;
+    border: inset;
+    padding: 2%;
+    background-image: linear-gradient(
+    to bottom, 
+        rgba(99, 110, 125, 0.9) 0%,
+        rgba(50, 61, 78, 0.95) 50%,
+        rgba(28, 35, 45, 0.95) 100%
+    );
+    color: antiquewhite;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all ease .2s;
+}
+
+.hdiv:hover {
+    font-size: 120%;
+    transform: translate(-50%, -60%);
+    box-shadow: 8px 8px 64px rgba(0,0,0);
+}
+
+.goy {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    background-image: linear-gradient(rgba(10, 10, 10, 0.5), rgba(100, 100, 100, 0.25));
+}
+
+marquee {
+    color: antiquewhite;
+    font-size: 150%;
+    cursor: default;
+}
+
+#aboutdiv {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-image: url("imaages.jpeg");
+    z-index: 1;
+    top: 5%;
+    left: 0%;
+    right: 0%;
+    height: 5%; 
+    color: antiquewhite;
+    transform: translateY(-100%);
+    transition: all 0.4s ease-in-out;
+}
+
+#aboutdiv.open {
+    box-shadow: 4px 4px 16px rgba(0,0,0);
+    transform: translateY(0%);
+}
+
+h2 {
+    text-shadow: rgba(0, 0, 0) 4px 8px 16px;
+    padding-inline: 5%;
+}
+
+#aboutdiv p {
+    text-shadow: rgba(0, 0, 0) 4px 8px 16px;
+}
+
+@media screen and (max-aspect-ratio: 1/1.5) {
+    html {
+        font-size: 250%;
+    }
+    
+    header {
+        display: block;
+        bottom: 90%;
+        text-align: center;
+    }
+    
+    nav ul {
+        padding-left: 0;
+        justify-content: center;
+    }
+    nav ul li {
+        padding-inline: 10%;
+        padding-top: 1%;
+    }
+    
+    #aboutdiv {
+        top: 10%;
+        height: 10%;
+    }
+}
+
+@media screen and (min-aspect-ratio: 2/1) {
+    header p {
+        font-size: 150%;
+    }
+    nav ul li {
+        font-size: 90%;
+    }
+}
